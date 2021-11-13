@@ -1,0 +1,112 @@
+body{
+  background-color: rgb(216, 216, 216);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.notesHeader {
+  color: rgb(114, 112, 112);
+}
+.search-bar {
+  align-items: center;
+}
+.search-bar input{
+  font-size: large;
+  text-align: center;
+  border: none;
+  border-radius: 15px;
+  border: 2px solid rgb(179, 179, 179);
+  height: 35px;
+  width: 250px;
+}
+.textarea {
+  background-color: #fff;
+  width: 50%;
+  margin: auto;
+  margin-top: 30px;
+  
+}
+textarea{
+  width: 99%;
+  resize: none;
+  border: none;
+  background-color: transparent; 
+}
+.textarea-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.colorButtons button {
+  border-radius: 30px;
+  border: none;
+  margin-right: 5px;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+.pink{
+  background-color: rgb(241, 95, 120);
+}
+.purple {
+  background-color: rgb(214, 119, 214);
+}
+.yellow {
+  background-color: yellow;
+}
+.blue {
+  background-color: rgb(134, 134, 255);
+}
+.green {
+  background-color: rgb(83, 158, 83);
+}
+
+.addButton  button{
+  height: 30px;
+  width: 100px;
+  color: #fff;
+  border-radius: 30px;
+  border: none;
+  background-color: rgb(37, 194, 37);
+  cursor: pointer;
+}
+.noteCards {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 40px;
+  width: 1000px;
+  margin: auto;
+  margin-top: 30px;
+  justify-content: center;
+}
+.noteCard {
+background-color: aqua;
+}
+.note-header {
+  float: right;
+}
+
+/*Media*/
+@media only screen and (max-width: 705px) {
+
+}
+@media only screen and (max-width: 1004px) {
+.noteCards {
+  grid-template-columns: auto auto;
+  width: 750px;
+}
+@media only screen and (max-width: 751px) {
+  .noteCards {
+    grid-template-columns: auto ;
+    width: 500px;
+  }
+}
+@media only screen and (max-width: 503px) {
+  .noteCards {
+    
+    width: 250px;
+  }
+}
+}
